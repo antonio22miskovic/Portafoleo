@@ -84,6 +84,11 @@
             >
               github
             </button>
+            <button class="btn w-25 mr-3" @click="open(portfolio.visit)"
+              v-if="portfolio.visit !== null"
+            >
+              Visitar
+            </button>
             <button class="btn w-25" @click="$emit('close')">Cerrar</button>
           </div>
         </div>

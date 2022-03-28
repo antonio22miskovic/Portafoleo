@@ -17,7 +17,7 @@
         <span
           class="title text-center"
           :class="{ pgray: !nightMode, 'text-light': nightMode }"
-          >Portfolio.</span
+          ></span
         >
       </div>
       <hr
@@ -168,7 +168,7 @@ export default {
       showDesignModal: false,
       modal_info: {},
       design_modal_info: {},
-      number: 4,
+      number: 3,
       showBtn: "Mostrar mas",
       shower: 0,
       data: [

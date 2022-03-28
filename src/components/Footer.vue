@@ -3,13 +3,13 @@
     <div class="container py-3">
       <div class="row pt-1 align-items-center">
         <div
-          class="col-xl-6 col-bg-6 col-md-6 col-sm-12 pbelow"
+          class="col-xl-4 col-bg-4 col-md-4 col-sm-12 pbelow"
           style="color: white;"
         >
-          <span>© 2021 Copyright: Ramón Villalobos</span>
+          <span>© 2021 Copyright: Ramon Villalobos</span>
         </div>
 
-        <div class="col-xl-6 col-bg-6 col-md-6 col-sm-12">
+        <div class="col-xl-4 col-bg-4 col-md-4 col-sm-12">
           <div class="text-center">
             <button
               class="btn btn-outline-secondary mx-2 "
@@ -23,20 +23,18 @@
             >
               <i class="fab fa-github"></i>
             </button>
-           <!--  <button
-              class="btn btn-outline-secondary mx-2"
-              @click="open('angellist')"
-            >
-              <i class="fab fa-angellist"></i>
-            </button>
-            <button
-              class="btn btn-outline-secondary mx-2"
-              @click="open('resume')"
-            >
-              <i class="fa fa-file"></i>
-            </button> -->
           </div>
         </div>
+
+        <div class="col-xl-4 col-bg-4 col-md-4 col-sm-12 text-center">
+            <div class="row-phone">
+              <i class="fa fa-phone"></i>
+               {{ phone }}
+            </div>
+
+          </div>
+        </div>
+
       </div>
     </div>
   </div>
@@ -53,6 +51,7 @@ export default {
       github: info.links.github,
       angellist: info.links.angellist,
       resume: info.links.resume,
+      phone: info.phone
     };
   },
   methods: {
@@ -77,6 +76,13 @@ export default {
 </script>
 
 <style scoped>
+
+.row-phone{
+  display: inline-block;
+  margin: 4%;
+  text-align: center;
+}
+
 span {
   font-weight: 500;
 }

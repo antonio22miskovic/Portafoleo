@@ -19,7 +19,7 @@ import Home from "./components/Home";
 import About from "./components/About";
 import Skills from "./components/Skills";
 import Portfolio from "./components/Portfolio";
-import Recommendation from "./components/Recommendation";
+// import Recommendation from "./components/Recommendation";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 
@@ -33,7 +33,7 @@ export default {
     About,
     Skills,
     Portfolio,
-    Recommendation,
+    // Recommendation,
     Contact,
     Footer,
   },

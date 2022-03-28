@@ -157,10 +157,6 @@ export default {
           message: this.text,
           to_name:' Ramón'
         };
-        console.log('obj', obj)
-        console.log('el service',process.env.SERVICE_ID)
-        console.log('el template',process.env.TEMPLATE_ID)
-        console.log('user id',process.env.USER_ID)
         emailjs
           .send(
             config.emailjs.serviceID,

@@ -53,6 +53,14 @@
           >
             Visitar
           </button>
+          <button
+            href=""
+            class="btn-sm btn btn-outline-secondary no-outline ml-4"
+            v-if="portfolio.github !== null"
+            @click.prevent="open(portfolio.github)"
+          >
+            Github
+          </button>
         </div>
       </div>
     </div>
